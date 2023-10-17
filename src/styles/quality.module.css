@@ -1,0 +1,80 @@
+.quality {
+  width: 100%;
+}
+
+.quality_content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  padding-top: 40px;
+  gap: 80px;
+}
+
+.quality_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 28px;
+}
+
+.quality_right p{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+.quality_left p{
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.4;
+    padding-left: 30px;
+}
+
+
+/* catalog banner */
+.catalog{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 338px;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.catalog_right{
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.catalog_right span{
+  font-size: 36px;
+  line-height: 1.23;
+  font-weight: 900;
+}
+.catalog_right p{
+  line-height: 25px;
+  font-size: 16px;
+  opacity: .7;
+  max-width: 360px;
+  padding: 0 10px;
+  padding-top: 20px;
+}
+
+.catalog_left{
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.catalog_left img{
+  position: absolute;
+}
