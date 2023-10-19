@@ -1,5 +1,4 @@
-import Image from "next/image";
-import styles from "@/styles/hero.module.css";
+import styles from "../../styles/hero.module.css";
 import Link from "next/link";
 
 export default function Hero() {
@@ -22,7 +21,7 @@ export default function Hero() {
             <svg
               role="presentation"
               fill="#fff"
-              class="t-cover__arrow-svg"
+              className="t-cover__arrow-svg"
               x="0px"
               y="0px"
               width="38.417px"

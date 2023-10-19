@@ -16,10 +16,12 @@ html, body{
   overflow-x: hidden;
 }
 
-a:hover{
-  color: rgb(233, 79, 10);
+nav a:hover{
+  color: rgb(233, 79, 10) !important;
 }
-
+.active_link{
+  color: rgb(233, 79, 10) !important;
+}
 /* navbar */
 .navbar{
   top: 0;
@@ -33,6 +35,9 @@ a:hover{
   height: 70px;
   vertical-align: middle;
   z-index: 10;
+}
+nav a{
+  transition: all .5s !important;
 }
 .brand{
   min-width: 120px;
@@ -56,6 +61,11 @@ a:hover{
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: all .5s;
+  cursor: pointer;
+}
+.dropdown:hover{
+  color: rgb(233, 79, 10);
 }
 .dropdown_icon{
   display: inline-block;

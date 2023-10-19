@@ -1,7 +1,7 @@
-import Navbar from '@/components/Navbar'
-import './globals.css'
-import localFont from 'next/font/local'
-import Footer from '@/components/footer'
+import Navbar from './Navbar';
+import './globals.css';
+import localFont from 'next/font/local';
+import Footer from '../components/footer';
 
 
 export const metadata = {

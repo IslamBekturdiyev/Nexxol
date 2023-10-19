@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "@/styles/hero.module.css";
+import styles from "../styles/hero.module.css";
 
 export default function Footer() {
   return (
@@ -18,18 +18,18 @@ export default function Footer() {
 
             <div className={styles.footer_two}>
               <Link href={"/"}>Главная</Link>
-              <Link href={"/"}>О компании</Link>
-              <Link href={"/"}>Почему мы</Link>
+              <Link href={"/#about"}>О компании</Link>
+              <Link href={"/#whywe"}>Почему мы</Link>
             </div>
 
             <div className={styles.footer_three}>
-              <Link href={"/"}>Каталог</Link>
-              <Link href={"/"}>Масла серии ГОСТ</Link>
-              <Link href={"/"}>Масла серии ПРЕМИУМ</Link>
+              <Link href={"/catalog"}>Каталог</Link>
+              <Link href={"/catalog/gost"}>Масла серии ГОСТ</Link>
+              <Link href={"/catalog/premium"}>Масла серии ПРЕМИУМ</Link>
             </div>
 
             <div className={styles.footer_four}>
-              <Link href={"/"}>Контакты</Link>
+              <Link href={"/contact"}>Контакты</Link>
             </div>
 
             <div className={styles.footer_five}>

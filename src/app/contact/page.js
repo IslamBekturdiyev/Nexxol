@@ -1,6 +1,6 @@
-"use client";
-import MapCompany from "@/components/Map";
-import styles from "@/styles/contact.module.css";
+
+import MapCompany from "../../components/Map";
+import styles from "../../styles/contact.module.css";
 import Link from "next/link";
 
 export default function Page() {

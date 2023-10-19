@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/styles/quality.module.css";
+import styles from "../../styles/quality.module.css";
 import Link from "next/link";
 
 export default function Quality() {
