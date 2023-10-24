@@ -1,0 +1,127 @@
+.detail{
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.ghost_history{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+}
+.ghost_history a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    transition: all .5s;
+}
+.ghost_history a:hover{
+    color: #e94f0a !important;
+}
+.ghost_history a:last-child{
+    color: #e94f0a !important;
+}
+
+/* product details */
+.flex_product{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 480px;
+}
+.product_parent{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 39px;
+    background-image: url('/parent-bg.png');
+    background-repeat: no-repeat;
+    width: 460px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.product_parent span{
+    padding-left: 60px;
+    color: #fff;
+}
+
+.right_product{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.product_title{
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 52px;
+}
+
+.right_product span{
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.certificate{
+    padding-top: 30px;
+    color: #e94f0a;
+    line-height: 40px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.left_side {
+    width: 45%;
+    height: 100%;
+    background-image: url('/detail.png');
+    background-position-y: -50px;
+    background-position-x: -180px;
+}
+
+
+/* detail body about */
+.detail_body{
+    padding-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.detail_body span{
+    color: #e94f0a;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 900;
+}
+
+
+.detail_info{
+    width: 54%;
+}
+
+.detail_body_text{
+    padding-top: 30px;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+
+.features{
+    width: 44%;
+}
+.features_body{
+    font-size: 23px;
+    line-height: 36px;
+    margin-top: 30px;
+    background-color: #e94f0a;
+    color: #fff;
+    padding: 10.5px 18.5px;
+}
