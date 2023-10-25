@@ -9,7 +9,7 @@ export default function About() {
           <div className={styles.about_right}>
             <span className={styles.about_title}>О компании</span>
             <div className={styles.about_header}>
-              NEXXOL — <br /> производитель <br /> масел и <br /> техжидкостей
+              NEXXOL — <br /> производитель <br /> масел и техжидкостей
             </div>
             <p>
               Наша компания входит в холдинг KSVK. Это группа предприятий

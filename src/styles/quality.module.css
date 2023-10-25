@@ -19,23 +19,22 @@
   gap: 28px;
 }
 
-.quality_right p{
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 29px;
+.quality_right p {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 29px;
 }
 
-.quality_left p{
-    line-height: 28px;
-    font-size: 18px;
-    font-weight: 300;
-    opacity: 0.4;
-    padding-left: 30px;
+.quality_left p {
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.4;
+  padding-left: 30px;
 }
-
 
 /* catalog banner */
-.catalog{
+.catalog {
   width: 100%;
   display: flex;
   align-items: center;
@@ -45,7 +44,7 @@
   text-decoration: none;
 }
 
-.catalog_right{
+.catalog_right {
   background-color: #000;
   color: #fff;
   height: 100%;
@@ -56,25 +55,78 @@
   justify-content: center;
   align-items: center;
 }
-.catalog_right span{
+.catalog_right span {
   font-size: 36px;
   line-height: 1.23;
   font-weight: 900;
 }
-.catalog_right p{
+.catalog_right p {
   line-height: 25px;
   font-size: 16px;
-  opacity: .7;
+  opacity: 0.7;
   max-width: 360px;
   padding: 0 10px;
   padding-top: 20px;
 }
 
-.catalog_left{
+.catalog_left {
   position: relative;
   width: 50%;
   height: 100%;
 }
-.catalog_left img{
+.catalog_left img {
   position: absolute;
+}
+
+/* media queries */
+@media only screen and (max-width: 1200px) {
+  .quality_left {
+    width: 50% !important;
+  }
+  .quality_content {
+    gap: 20px;
+  }
+  .quality_left img {
+    width: 450px;
+    height: 300px;
+  }
+  .quality_left p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  /* catalog */
+
+  .catalog {
+    padding: 0 10px;
+    height: 180px;
+  }
+  .catalog_right span {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .quality_content {
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .quality_left {
+    width: 50% !important;
+  }
+  .quality_right {
+    gap: 15px;
+  }
+  .quality_left img {
+    width: 271px;
+    height: 180px;
+  }
+  .quality_right p {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .quality_left p {
+    font-size: 12px;
+    line-height: 19px;
+    padding-left: 0;
+  }
 }

@@ -128,3 +128,16 @@ nav a{
   max-width: 1200px;
   margin: 0 auto;
 }
+
+
+/* media queries */
+@media only screen and (max-width: 1200px) {
+ .container{
+  max-width: 960px;
+ } 
+}
+@media only screen and (max-width: 960px) {
+  .container{
+   max-width: 640px;
+  } 
+ }

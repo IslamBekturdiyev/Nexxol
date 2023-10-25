@@ -10,83 +10,87 @@ export default function Whyus() {
           Чтобы предлагать клиентам лучшую цену, мы оптимизировали процессы:
         </div>
 
-        <div className={styles.figures}>
-          <div className={styles.figures_content}>
-            <div className={styles.span}></div>
-            <div className={styles.flex_figures}>
-              <div>
-                <Image src={"/number-bg.png"} alt="whywe nexxol" fill />
-                <span>1</span>
+        <div className={styles.responsive_figures}>
+          <div className={styles.figures}>
+            <div className={styles.figures_content}>
+              <div className={styles.span}></div>
+              <div className={styles.flex_figures}>
+                <div>
+                  <Image src={"/number-bg.png"} alt="whywe nexxol" fill />
+                  <span>1</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className={styles.figures_content}>
-            <div className={styles.span}></div>
-            <div className={styles.flex_figures}>
-              <div>
-                <Image src={"/number-bg.png"} alt="whywe nexxol" fill />
-                <span>2</span>
+            <div className={styles.figures_content}>
+              <div className={styles.span}></div>
+              <div className={styles.flex_figures}>
+                <div>
+                  <Image src={"/number-bg.png"} alt="whywe nexxol" fill />
+                  <span>2</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className={styles.figures_content}>
-            <div className={styles.span}></div>
-            <div className={styles.flex_figures}>
-              <div>
-                <Image src={"/number-bg.png"} alt="whywe nexxol" fill />
-                <span>3</span>
+            <div className={styles.figures_content}>
+              <div className={styles.span}></div>
+              <div className={styles.flex_figures}>
+                <div>
+                  <Image src={"/number-bg.png"} alt="whywe nexxol" fill />
+                  <span>3</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className={styles.figures_content}>
-            <div className={styles.span}></div>
-            <div className={styles.flex_figures}>
-              <div>
-                <Image src={"/number-bg.png"} alt="whywe nexxol" fill />
-                <span>4</span>
+            <div className={styles.figures_content}>
+              <div className={styles.span}></div>
+              <div className={styles.flex_figures}>
+                <div>
+                  <Image src={"/number-bg.png"} alt="whywe nexxol" fill />
+                  <span>4</span>
+                </div>
               </div>
             </div>
+
+            <div className={styles.span}></div>
           </div>
 
-          <div className={styles.span}></div>
-        </div>
-
-        <div className={styles.figures_texts}>
-          <div>Разработали оптимальные рецептуры продуктов</div>
-          <div>Наладили крупные оптовые поставки сырья</div>
-          <div>Оптимизировали ассортимент</div>
-          <div>Выстроили эффективную логистику</div>
-        </div>
-
-        <div className={styles.oil_flex}>
-          <div className={styles.oil_right}>
-            <Image
-              src={"/why-us.png"}
-              alt="nexxol oil"
-              width={637}
-              height={470}
-            />
-          </div>
-
-          <div className={styles.oil_left}>
-            <Image
-              src={"/why-us2.png"}
-              alt="bg-oil nexxol"
-              fill
-              style={{ top: "-100px" }}
-            />
-            <div>
-              Мы <br /> разливаем наши <br /> масла в тару <br /> большого
-              объема. <br /> Это тоже помогает <br />
-              снизить цену <br /> продукции и сделать <br /> контракт с NEXXOL{" "}
-              <br /> выгодным для наших <br /> клиентов.
-            </div>
+          <div className={styles.figures_texts}>
+            <div>Разработали оптимальные рецептуры продуктов</div>
+            <div>Наладили крупные оптовые поставки сырья</div>
+            <div>Оптимизировали ассортимент</div>
+            <div>Выстроили эффективную логистику</div>
           </div>
         </div>
+      
+      
+      <div className={styles.oil_flex}>
+        <div className={styles.oil_right}>
+          <Image
+            src={"/why-us.png"}
+            alt="nexxol oil"
+            width={637}
+            height={470}
+          />
+        </div>
 
+        <div className={styles.oil_left}>
+          <Image
+            src={"/why-us2.png"}
+            alt="bg-oil nexxol"
+            fill
+            style={{ top: "-100px" }}
+          />
+          <div>
+            Мы <br /> разливаем наши <br /> масла в тару <br /> большого объема.{" "}
+            <br /> Это тоже помогает <br />
+            снизить цену <br /> продукции и сделать <br /> контракт с NEXXOL{" "}
+            <br /> выгодным для наших <br /> клиентов.
+          </div>
+        </div>
+      </div>
+
+      
         <div className={styles.quality_content}>
           <div className={styles.quality_right}>
             <p>
@@ -168,15 +172,21 @@ export default function Whyus() {
           style={{ width: "100%", height: "auto" }}
         />
         <p>
-          Эффективность, оптимизация, <br /> экономия, контроль и качество — <br />
+          Эффективность, оптимизация, <br /> экономия, контроль и качество —{" "}
+          <br />
           <span>5 важных правил NEXXOL</span>
         </p>
       </div>
 
-        <div className="container">
-            <div className={styles.effectiveness_bottom}>Даже в рамках ограниченного бюджета можно получить смазочные материалы высокого качества и обеспечить стабильную работу техники — если обратиться в NEXXOL. Мы разработали свой продукт таким образом, чтобы бескомпромиссно соответствовать требованиям ГОСТ и оставаться доступным по цене</div>
+      <div className="container">
+        <div className={styles.effectiveness_bottom}>
+          Даже в рамках ограниченного бюджета можно получить смазочные материалы
+          высокого качества и обеспечить стабильную работу техники — если
+          обратиться в NEXXOL. Мы разработали свой продукт таким образом, чтобы
+          бескомпромиссно соответствовать требованиям ГОСТ и оставаться
+          доступным по цене
         </div>
-
+      </div>
     </section>
   );
 }
