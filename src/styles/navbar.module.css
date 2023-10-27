@@ -1,0 +1,59 @@
+.menu_container {
+    z-index: 99999999;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu_container a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .btn_close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    color: #000;
+    border-radius: 58px;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+  }
+  
+  .links_ul, .tooltip_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .links_ul a, .links_ul span{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .tooltip_flex a{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .tooltip{
+    display: none;
+  }
+  .dropdown:hover ~ .tooltip{
+    display: block;
+    
+  }
+
+  

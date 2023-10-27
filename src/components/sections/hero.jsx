@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.hero_bg}></div>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.t_cover}>
           <div className={styles.hero_content}>
             <div className={styles.hero_title}>

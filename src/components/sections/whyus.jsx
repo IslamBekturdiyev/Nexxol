@@ -5,11 +5,14 @@ export default function Whyus() {
   return (
     <section className={styles.whyus} id="whywe">
       <div className="container">
+        
         <div className={styles.whywe_title}>Почему выбирают нас</div>
         <div className={styles.whywe_header}>
           Чтобы предлагать клиентам лучшую цену, мы оптимизировали процессы:
         </div>
 
+        </div>
+        
         <div className={styles.responsive_figures}>
           <div className={styles.figures}>
             <div className={styles.figures_content}>
@@ -63,7 +66,8 @@ export default function Whyus() {
           </div>
         </div>
       
-      
+      <div className="container">
+
       <div className={styles.oil_flex}>
         <div className={styles.oil_right}>
           <Image

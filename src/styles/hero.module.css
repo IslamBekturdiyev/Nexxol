@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: -webkit-linear-gradient(
     top,
     rgba(0, 0, 0, 0.4),
@@ -17,6 +17,10 @@
   height: 100%;
   z-index: -1;
   position: absolute;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .t_cover {
   height: 628px;
@@ -85,15 +89,20 @@
   height: 400px;
 }
 .footer_container {
+  max-width: 1200px;
+  margin: 0 auto;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .footer_content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 200px repeat(auto-fill, minmax(147px, 1fr));
   justify-content: space-between;
+  padding: 0 15px;
   width: 100%;
+  row-gap: 20px;
 }
 
 .footer_content > div {
@@ -129,18 +138,118 @@
   .hero {
     padding-bottom: 40px;
   }
-  .t_cover{
+  .t_cover {
     width: 960px;
   }
-  .hero_header{
+  .hero_header {
     font-size: 68px;
+  }
+  .container {
+    max-width: 960px;
+  }
+  .footer_container{
+    max-width: 960px;
   }
 }
 
 @media only screen and (max-width: 960px) {
-  .hero_header{
+  .hero_header {
     font-size: 50px;
     padding-right: 30%;
   }
+  .hero {
+    height: 100%;
+  }
+  .container {
+    max-width: 640px;
+  }
 
+  /* footer --- 960px  */
+  .footer_container{
+    padding: 0 15px;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  .hero_bg {
+    background-image: url("/small_bg.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+  }
+  .footer_container{
+    height: 100%;
+    padding: 80px 15px;
+  }
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer_one{
+    width: 100%;
+  }
+  .footer_two, .footer_three, .footer_four, .footer_five{
+    padding-top: 40px;
+    width: 50%;
+    gap: 20px;
+  }
+  .footer{
+    height: 100%;
+  }
+  
+
+
+}
+
+@media only screen and (max-width: 480px) {
+  .hero_bg {
+    background-position: center top;
+  }
+  .t_cover {
+    width: 100%;
+    height: 93dvh;
+    padding: 0 10px;
+  }
+  .container {
+    max-width: 420px;
+  }
+  .hero_content {
+    width: 325px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-left: 0 !important;
+    gap: 0;
+  }
+  .hero_title {
+    font-size: 14px;
+    line-height: 2;
+  }
+  .hero_header {
+    font-size: 22px;
+    line-height: 2;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 421px) {
+  .footer{
+    height: 100%;
+  }
+  .footer_container{
+    padding: 80px 15px;
+  }
+  .footer_content{
+    gap: 30px;
+  }
+  .footer_two, .footer_three, .footer_four, .footer_five{
+    width: 100%;
+    gap: 20px
+    ;
+  }
 }

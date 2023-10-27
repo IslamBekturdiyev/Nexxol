@@ -5,7 +5,7 @@ import styles from "../styles/hero.module.css";
 export default function Footer() {
   return (
     <div className={styles.footer}>
-      <div className="container">
+      
         <div className={styles.footer_container}>
           <div className={styles.footer_content}>
             <div className={styles.footer_one}>
@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 }

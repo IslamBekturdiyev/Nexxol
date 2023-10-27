@@ -17,6 +17,11 @@
   text-align: center;
 }
 
+.responsive_figures{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .figures {
   padding-top: 40px;
   display: flex;
@@ -101,21 +106,21 @@
 }
 
 /* nexxol oil banner */
+
 .oil_flex {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  position: relative;
   height: 728px;
 }
 .oil_right {
   height: 470px;
+  position: absolute;
+  top: 100px;
 }
 .oil_left {
+  float: right;
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -221,6 +226,10 @@
     line-height: 23px;
   }
 
+  .responsive_figures{
+    max-width: 960px;
+  }
+
   /* lines */
   .span {
     background-color: #e94f0a;
@@ -268,15 +277,19 @@
   }
 
   /* -------------------------Oil Nexxol 1200px---------------------- */
+  .oil_right,
   .oil_right img {
-    width: 500px;
-    height: 360px;
+    width: 520px;
+    height: 420px;
+    top: 40px;
   }
   .oil_flex {
-    height: 550px;
+    height: 580px;
+    padding: 0 20px;
   }
-  .oil_left img {
-    top: -85px !important;
+  .oil_left {
+    width: 530px;
+    height: 100%;
   }
   .oil_left div {
     line-height: 36px;
@@ -343,6 +356,9 @@
     font-size: 15px;
     line-height: 17px;
   }
+  .responsive_figures{
+    max-width: 640px;
+  }
 
   /* lines */
   .responsive_figures {
@@ -386,22 +402,30 @@
     margin: 0 !important;
   }
 
-  /* -------------------------Oil Nexxol 1200px---------------------- */
+  /* -------------------------Oil Nexxol 960px---------------------- */
+  .oil_right,
   .oil_right img {
-    margin-top: 40px;
-    width: 340px;
-    height: 280px;
+    top: 10px !important;
+    left: -20px;
+    height: 354px;
+    width: 480px;
   }
-  .oil_flex {
-    height: 550px;
+
+  .oil_left {
+    height: 480px;
+    width: 418px;
+    bottom: 0 !important;
+    align-items: flex-end;
   }
   .oil_left img {
-    top: -85px !important;
+    top: 0 !important;
+    left: 50px !important;
   }
+
   .oil_left div {
     line-height: 32px;
     font-size: 20px;
-    padding-right: 20px;
+    padding-right: 0px;
   }
 
   /* -------------------------Quality Content 1200px----------------------- */
@@ -434,7 +458,7 @@
   }
 
   /* ----------------------Baner 1200px------------------- */
-  .about_banner{
+  .about_banner {
     max-width: 682px !important;
     margin: 0 auto;
   }
@@ -451,5 +475,196 @@
   .effectiveness_bottom {
     line-height: 31px;
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  
+  .whywe_header {
+    max-width: 380px;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .figures_texts div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+    margin: 0 !important;
+  }
+  .figures_texts{
+    gap: 45px;
+  }
+  .responsive_figures {
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 431px;
+  }
+  .figures {
+    gap: 20px;
+  }
+
+  /* ---- oil 640px ---- */
+
+  .oil_flex{
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+  .oil_right,
+  .oil_right img {
+    top: -25px !important;
+    left: -35px;
+    height: 267px;
+    width: 360px;
+  }
+
+  .oil_left {
+    height: 475px;
+    width: 413px;
+    bottom: 0 !important;
+    align-items: flex-end;
+  }
+  .oil_left img {
+    top: 0 !important;
+    left: 50px !important;
+  }
+
+  .oil_left div {
+    line-height: 31px;
+    font-size: 20px;
+    padding-right: 0px;
+  }
+
+  /* -------------------------Quality Content 640px----------------------- */
+  .quality_right{
+    gap: 15px;
+  }
+  .quality_right p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .quality_content {
+    padding-right: 0;
+    padding-left: 0;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .quality_left{
+    width: 100%;
+  }
+  .quality_left img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* choose us */
+
+  .choose_us {
+    grid-template-columns: 120px 120px 120px;
+    justify-content: space-between;
+  }
+
+  .choose_content {
+    text-align: center;
+    line-height: 17px;
+    font-size: 11px;
+  }
+  .choose_content img {
+    width: 30px;
+    height: 34px;
+  }
+   /* ----------------------Baner 640px------------------- */
+   .about_banner {
+    max-width: 532px !important;
+    margin: 0 auto;
+  }
+  .about_banner p {
+    font-size: 15px;
+    line-height: 23px;
+    width: 100%;
+  }
+  .about_banner span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .effectiveness_bottom {
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .responsive_figures{
+    gap: 10px;
+    max-width: 420px;
+  }
+  .figures_texts div {
+    line-height: 19px;
+    font-size: 12px;    
+    padding-right: 10px;
+  } 
+
+  /* oil nexxol 480px */
+  .oil_flex{
+    margin-top: 40px;
+    padding-top: 40px;
+    height: 470px;
+  }
+  .oil_right,
+  .oil_right img {
+    top: -25px !important;
+    left: -35px;
+    height: 260px;
+    width: 350px;
+  }
+
+  .oil_left {
+    height: 350px;
+    width: 304px;
+    bottom: -100px !important;
+    align-items: flex-end;
+  }
+  .oil_left img {
+    top: 5px !important;
+    left: 30px !important;
+  }
+
+  .oil_left div {
+    line-height: 23px;
+    font-size: 15px;
+    padding-right: 0px;
+  }
+
+  /* choose us */
+  .choose_us {
+    grid-template-columns: auto;
+    padding-bottom: 20px;
+    justify-content: space-between;
+  }
+  .choose_content {
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+   /* ----------------------Baner 480px------------------- */
+   .about_banner {
+    max-width: 80% !important;
+    margin: 0 auto;
+  }
+  .about_banner p {
+    font-size: 12px;
+    line-height: 19px;
+    width: 100%;
+  }
+  .about_banner span {
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  .effectiveness_bottom{
+    padding-top: 20px;
   }
 }

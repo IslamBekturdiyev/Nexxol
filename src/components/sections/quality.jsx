@@ -30,8 +30,9 @@ export default function Quality() {
             <p>Наши специалисты постоянно работают над улучшением характеристик масел</p>
           </div>
         </div>
-
-        <Link href={'/catalog'} className={styles.catalog}>
+      </div>
+      <div className={styles.quality_container}>
+      <Link href={'/catalog'} className={styles.catalog}>
             <div className={styles.catalog_right}>
                 <span>Каталог</span>
                 <p>В нашем ассортименте представлено более 30 видов масла для разного назначения</p>
