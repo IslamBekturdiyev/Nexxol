@@ -2,9 +2,18 @@
 import styles from "../styles/navbar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function ResponsiveNav({ open, closeMenu }) {
+  const [state, setState] = useState(false);
   const pathname = usePathname();
+
+  const handleClick = () => {
+    setState(!state);
+  }
+
+
+
   return (
     <>
       {open && (
@@ -25,30 +34,32 @@ export default function ResponsiveNav({ open, closeMenu }) {
           <ul className={styles.links_ul}>
             <Link href={"/#about"}>О компании</Link>
 
-            <span className={styles.dropdown}>Каталог</span>
+            <span className={styles.dropdown} onClick={handleClick}>Каталог</span>
             <div className={styles.tooltip}>
-              <div className={styles.tooltip_flex}>
-                <Link
-                  href="/catalog/gost"
-                  className={pathname == "/catalog/gost" ? "active_link" : ""}
-                >
-                  Масла серии ГОСТ
-                </Link>
-                <Link
-                  href="/catalog/premium"
-                  className={
-                    pathname == "/catalog/premium" ? "active_link" : ""
-                  }
-                >
-                  Масла серии ПРЕМИУМ
-                </Link>
-                <Link
-                  href="/catalog"
-                  className={pathname == "/catalog" ? "active_link" : ""}
-                >
-                  Все
-                </Link>
-              </div>
+              {state && (
+                <div className={styles.tooltip_flex}>
+                  <Link
+                    href="/catalog/gost"
+                    className={pathname == "/catalog/gost" ? "active_link" : ""}
+                  >
+                    Масла серии ГОСТ
+                  </Link>
+                  <Link
+                    href="/catalog/premium"
+                    className={
+                      pathname == "/catalog/premium" ? "active_link" : ""
+                    }
+                  >
+                    Масла серии ПРЕМИУМ
+                  </Link>
+                  <Link
+                    href="/catalog"
+                    className={pathname == "/catalog" ? "active_link" : ""}
+                  >
+                    Все
+                  </Link>
+                </div>
+              )}
             </div>
 
             <Link href={"/#whywe"}>Почему мы?</Link>

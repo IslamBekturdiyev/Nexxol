@@ -97,12 +97,10 @@
   justify-content: center;
 }
 .footer_content {
-  display: grid;
-  grid-template-columns: 200px repeat(auto-fill, minmax(147px, 1fr));
+  display: flex;
   justify-content: space-between;
-  padding: 0 15px;
-  width: 100%;
-  row-gap: 20px;
+  /* width: 100%; */
+  gap: 80px;
 }
 
 .footer_content > div {
@@ -135,6 +133,14 @@
 /* media queries */
 
 @media only screen and (max-width: 1200px) {
+  .footer_content {
+    display: grid;
+    grid-template-columns: 200px repeat(auto-fill, minmax(147px, 1fr));
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 100%;
+    row-gap: 20px;
+  }
   .hero {
     padding-bottom: 40px;
   }

@@ -32,7 +32,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.form_title}>Есть вопрос?</div>
         <div className={styles.form_header}>Напишите нам! Наш специалист свяжется с</div>
         <div className={styles.form_header}>вами, ответит на вопросы.</div>

@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ResponsiveNav from "./responsiveNav";
+
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -16,6 +17,10 @@ export default function Navbar() {
   const closeMenu = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <>
@@ -33,7 +38,7 @@ export default function Navbar() {
             width="36"
             height="36"
             fill="currentColor"
-            class="bi bi-list"
+            className="bi bi-list"
             viewBox="0 0 16 16"
           >
             <path
