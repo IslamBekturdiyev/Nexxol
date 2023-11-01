@@ -158,7 +158,7 @@ export default function Page({ params: { name } }) {
   };
   return (
     <section className={styles.descr}>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.ghost_history}>
           <Link href={"/"}>ГЛАВНАЯ</Link>/<Link href={"/catalog"}>КАТАЛОГ</Link>
           /<Link href={"/catalog/gost"}>МАСЛА СЕРИИ ГОСТ</Link>/
@@ -169,7 +169,7 @@ export default function Page({ params: { name } }) {
             {info[name].data.map(item => (
                 <Link href={`/catalog/gost/${name}/${item.link}`}>
                     <div className={styles.grid_product_item}>
-                        <Image src={'/real_product.png'} width={260} height={200}/>
+                        <Image src={'/little_oil.png'} width={260} height={200}/>
                          <span>{item.text}</span>
                     </div>
                 </Link>

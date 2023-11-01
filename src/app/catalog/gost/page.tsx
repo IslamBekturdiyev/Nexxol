@@ -42,7 +42,7 @@ export default function Gost() {
     ]
     return (
         <section className={styles.ghost}>
-            <div className='container'>
+            <div className={styles.container}>
                 <div className={styles.ghost_history}>
                     <Link href={'/'}>ГЛАВНАЯ</Link>
                     /
